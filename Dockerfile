@@ -22,7 +22,8 @@ WORKDIR /home/node
 
 COPY --from=builder /home/node/package*.json /home/node/
 COPY --from=builder /home/node/dist/ /home/node/dist/
+COPY --from=builder /home/node/junit.xml /home/node/junit.xml
 
-RUN npm ci
+RUN npm ci --only=production
 
 CMD ["node", "dist/main"]
