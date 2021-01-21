@@ -13,7 +13,7 @@ RUN npm ci \
 
 # ---
 
-FROM node:14.15.4-buster
+FROM node:14.15.4-buster as package
 
 ENV NODE_ENV production
 
