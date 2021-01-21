@@ -71,7 +71,7 @@
   },
   "jest-junit": {
     "suiteName": "nest-test tests",
-    "outputDirectory": ".",
+    "outputDirectory": "junit",
     "outputName": "junit.xml",
     "uniqueOutputName": "false",
     "classNameTemplate": "{classname}-{title}",
