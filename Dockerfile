@@ -29,6 +29,6 @@ CMD ["node", "dist/main"]
 
 # ---
 
-FROM scratch AS export-stage
-
-COPY --from=builder /home/node/junit .
+#FROM scratch AS export-stage
+#
+#COPY --from=builder /home/node/junit .
